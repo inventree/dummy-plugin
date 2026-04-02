@@ -9,8 +9,4 @@ from .models import ExampleModel
 class ExampleModelAdmin(admin.ModelAdmin):
     """Admin interface for the ExampleModel."""
 
-    list_display = (
-        "user",
-        "counter",
-    )
-    list_filter = ("user",)
+    list_display = ("key", "value")
